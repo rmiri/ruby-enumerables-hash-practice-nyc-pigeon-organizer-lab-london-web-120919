@@ -3,15 +3,15 @@ def nyc_pigeon_organizer(data)
   newHash = {}
   data[:gender][:male].each { |e|
   newHash[e] = Hash.new
-    newHash[e][:color] = nil
+  #  newHash[e][:color] = nil
     newHash[e][:gender] = "male"
-    newHash[e][:lives] = nil
+  #  newHash[e][:lives] = nil
   }
   data[:gender][:female].each { |e|
   newHash[e] = Hash.new
-    newHash[e][:color] = nil
+  #  newHash[e][:color] = nil
     newHash[e][:gender] = "female"
-    newHash[e][:lives] = nil
+  #  newHash[e][:lives] = nil
   }
   # data[:color].each { |pColor,pName| #pName is an array
   #   newHash.each { |hName,hValue| #hName are hashes from the pigeons names, and Hvalue are their atributes
