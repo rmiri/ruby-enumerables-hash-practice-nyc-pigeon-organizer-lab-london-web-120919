@@ -18,7 +18,7 @@ def nyc_pigeon_organizer(data)
   data[:color].each { |pColor,pName| #pName is an array
     newHash.each { |hName,hValue| #hName are hashes from the pigeons names, and Hvalue are their atributes
       if pName.include?(hName) #working until here, should I loop inside it?
-        newHash[hName][:color].push(pColor) #My problem is, it only adds the last color
+        newHash[hName][:color].push(pColor.to_s) #My problem is, it only adds the last color
         # hValue.each { |key,thisshit|
         # thisshit.push(pColor)
         # }
